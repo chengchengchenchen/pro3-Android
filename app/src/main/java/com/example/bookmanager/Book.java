@@ -7,11 +7,13 @@ public class Book {
     public String publisher; // 出版社
     public int year; // 出版年份
 
-    Book(String name, String author, String publisher, int year){
+    public int id;  //R.drawable.
+    Book(String name, String author, String publisher, int year, int id){
         this.name=name;
         this.author=author;
         this.publisher=publisher;
         this.year=year;
+        this.id=id;
     }
 
 

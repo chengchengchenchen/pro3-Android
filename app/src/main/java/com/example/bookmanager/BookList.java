@@ -18,10 +18,10 @@ public class BookList {
     }
 
     public static final Book[] books = new Book[]{
-            new Book("Java编程思想", "Bruce Eckel", "机械工业出版社", 2007),
-            new Book("Android开发艺术探索", "任玉刚", "电子工业出版社", 2015),
-            new Book("算法导论", "Thomas H. Cormen", "机械工业出版社", 2013),
-            new Book("深入理解计算机系统", "Randal E. Bryant", "机械工业出版社", 2011),
+            new Book("Java编程思想", "Bruce Eckel", "机械工业出版社", 2007, R.drawable.p1),
+            new Book("Android开发艺术探索", "任玉刚", "电子工业出版社", 2015, R.drawable.p1),
+            new Book("算法导论", "Thomas H. Cormen", "机械工业出版社", 2013, R.drawable.p1),
+            new Book("深入理解计算机系统", "Randal E. Bryant", "机械工业出版社", 2011, R.drawable.p1),
     };
 
     // 根据书名在预先存储的书库中查找相应的书籍信息，返回一个Book对象或null

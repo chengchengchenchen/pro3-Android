@@ -61,24 +61,24 @@
             android:orientation="horizontal">
 
             <Space
-                android:layout_width="1dp"
+                android:layout_width="27dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
 
             <ImageView
                 android:id="@+id/book_cover_image"
-                android:layout_width="75dp"
-                android:layout_height="85dp"
+                android:layout_width="64dp"
+                android:layout_height="93dp"
                 android:scaleType="centerCrop" />
 
             <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="34dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/book_info_text"
-                android:layout_width="213dp"
+                android:layout_width="192dp"
                 android:layout_height="match_parent" />
 
             <Space
@@ -93,7 +93,7 @@
                 android:text="收藏" />
 
             <Space
-                android:layout_width="wrap_content"
+                android:layout_width="68dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
         </LinearLayout>
