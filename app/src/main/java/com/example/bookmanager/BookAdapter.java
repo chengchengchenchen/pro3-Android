@@ -3,6 +3,7 @@ package com.example.bookmanager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -36,6 +37,7 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
         // 获取当前位置对应的书籍对象
         Book book = books.get(position);
         // 为ViewHolder对象中的控件设置数据和视图
+        holder.bookCoverImage.setImageResource(book.id);
         holder.bookNameText.setText(book.name);
         holder.bookAuthorText.setText(book.author);
         holder.bookPublisherText.setText(book.publisher);
@@ -52,6 +54,7 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
     public static class BookViewHolder extends RecyclerView.ViewHolder {
 
         // 定义每个条目中需要用到的控件对象
+        public ImageView bookCoverImage;
         public TextView bookNameText;
         public TextView bookAuthorText;
         public TextView bookPublisherText;
@@ -61,6 +64,7 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
         // 构造方法，接收一个View对象作为参数，并为控件对象赋值
         public BookViewHolder(@NonNull View itemView) {
             super(itemView);
+            bookCoverImage = itemView.findViewById(R.id.book_cover_image);
             bookNameText = itemView.findViewById(R.id.book_name_text);
             bookAuthorText = itemView.findViewById(R.id.book_author_text);
             bookPublisherText = itemView.findViewById(R.id.book_publisher_text);

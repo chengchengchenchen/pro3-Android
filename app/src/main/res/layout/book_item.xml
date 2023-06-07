@@ -7,7 +7,7 @@
 
     <ImageView
         android:id="@+id/book_cover_image"
-        android:layout_width="75dp"
+        android:layout_width="67dp"
         android:layout_height="85dp"
         android:scaleType="centerCrop" />
 
